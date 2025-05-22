@@ -1,0 +1,18 @@
+name: read text from a file
+
+on:
+    push:
+        branches:
+            - master
+    workflow_dispatch:
+
+jobs:
+    read_text:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout repo
+              uses: actions/checkout@v4
+
+            - name: read text from hello.txt
+              run: |
+               cat hello.txt
