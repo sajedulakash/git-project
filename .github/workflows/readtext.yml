@@ -15,4 +15,5 @@ jobs:
 
             - name: read text from hello.txt
               run: |
+               echo "reading text from hello.txt file"
                cat hello.txt
