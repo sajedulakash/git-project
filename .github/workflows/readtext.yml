@@ -3,8 +3,7 @@ name: read text from a file
 on:
     push:
         branches:
-            - master
-    workflow_dispatch:
+            - main
 
 jobs:
     read_text:
